@@ -1,0 +1,145 @@
+<html>
+<head>
+<title> Ka-Ri-Yoka</title>
+</head>
+<script type="text/JavaScript">
+
+           var price;
+		   price = 0;
+function BILL()
+        {
+		price = 0;
+		if (document.Order.Item1.checked)
+		{ price = price + 489;    }
+		if (document.Order.Item2.checked)	
+		{ price = price + 489;    }
+		if (document.Order.Item3.checked)
+		{ price = price + 450;    }
+		if (document.Order.Item4.checked)
+		{ price = price + 129;    }
+		if (document.Order.Item5.checked)
+		{ price = price + 125;    }
+		if (document.Order.Item6.checked)
+		{ price = price + 500;    }
+		if (document.Order.Item7.checked)
+		{ price = price + 150;    }
+		if (document.Order.Item8.checked)
+		{ price = price + 100;    }	
+		if (document.Order.Item9.checked)
+		{ price = price + 75;    }
+		if (document.Order.Item10.checked)
+		{ price = price + 99;    }
+		document.Order.Total.value = '$'+ price; 
+		}
+function Sub()
+{
+		alert("REMEMBER TO ALWAYS FILL UP THE REGISTRATION BEFORE YOU ORDER...\n\nThank You");
+		var frstN = document.Order.fn1.value;
+		var mdN = document.Order.fn2.value;
+		var lstN = document.Order.fn3.value;
+		var addr = document.Order.fn5.value;
+		var CnctN = document.Order.fn12.value;
+		var Conf = confirm("Sure to Buy this Product?");
+		if(Conf == true)
+		{
+		alert("Customer Name: "+frstN +" "+mdN+" "+lstN
+		+"\nAddress: "+addr
+		+"\nContact Number: "+CnctN
+		+"\nTotal of $ "+price +'\n\nThank You For Buying In Kari-Yoka-Ka Gaming Shop!!!');
+		} 
+		else
+		alert('Thank You For Visiting Kari-Yoka-Ka Gaming Shop!!');
+		 
+
+}
+function RES()
+{
+price = 0;
+return price;
+}
+</script>
+<body background = marioo.jpg style="background-size:cover">
+<table border = "0" cellpadding = "100" align = center width = "1250" background ="title1.jpg" style="background-size:cover">
+	<tr>
+		<td>
+	</tr>	
+</table>
+<table border ="4" color = "BLACK" cellspacing= "0" width ="1250" align = center>
+	<tr>
+		<td align= center background = homebg.jpg style="background-size:cover" width = "300"> <a href = "j1.html" name ="homepage"><font size = 5 face = "SHOWCARD GOTHIC" color = "BLACK">HOME</a> 
+		<td align= center background = prductbg.jpg style="background-size:cover"width = "350"><a href = "j2.html" name ="part1"><font size = 5 face = "SHOWCARD GOTHIC" color = "BLACK">PRODUCTS</a> 
+		<td align= center background = contactbg.jpg style="background-size:cover" width = "350"><a href = "j4.html" name ="part2"><font size = 5 face = "SHOWCARD GOTHIC" color = "BLACK">BUY NOW!</a> 
+		<td align= center background = orderbg.jpg style="background-size:cover" width = "350"><a href = "j3.html" name ="part2"><font size = 5 face = "SHOWCARD GOTHIC" color = "BLACK">CONTACT US</a> 
+	</font>
+	</tr>
+</table>
+<table width = 1200 height = 750 align = center background = scroll.png style="background-size:cover">
+<tr >
+<td>
+<br><br><br><br><br><br>
+<table border = "3" bordercolor = "BLACK" cellpadding = "5" cellspacing = "0" align = center>
+<tr bgcolor = "FLORALWHITE">
+<td>
+<font face = "Green Screen" size = "5" color = "MAROON"><center> . . . R E G I S T R A T I O N . . . </font></center>
+<br>
+<form name ="Order" method ="post" action = "" onSubmit = "Sub()" onreset ="RES()" >
+<font face = "Green Screen" size = "4" >
+<center>First Name <input type = "text" 
+name = "fn1" value ="">
+Middle Name <input type = "text" 
+name = "fn2" size = "4" value ="">
+Last Name <input type = "text" 
+name = "fn3" value ="">
+<br><br>
+Country & City <input type = "text" 
+name = "fn4" size = "38" value ="">
+<br><br>
+Address <input type = "text" 
+name = "fn5" size = "50" value ="">
+<br><br>
+Email <input type = "text" 
+name = "fn6" size = "51" value ="">
+<br><br>
+Comment <input type = "text" 
+name = "fn7" size = "48" value ="">
+<br><br>
+Gender :
+Female <input type = "radio" 
+name = "fn8" size = "4" value ="">
+Male <input type = "radio" 
+name = "fn9" size = "4" value ="">
+<br><br>
+Age<input type = "text" 
+name = "fn10" size = "4" value ="">
+Status<input type = "text" 
+name = "fn11" size = "6" value ="">
+Contact Number<input type = "text" 
+name = "fn12" size = "13" value ="">
+</table>
+<br>
+<table border = "3" bordercolor = "BLACK" cellpadding = "5" cellspacing = "0" align = center>
+<tr bgcolor = "FLORALWHITE">
+<td>
+<font face = "Green Screen" size = "5"color = "MAROON"><center> . . . ORDER NOW . . . </font></center>
+<font face = "Green Screen" size = "4" align = center>
+ <p><input type="checkbox" name="Item1" value="Item1_check" onclick="BILL()"> 1.PS4 = $489
+ <p><input type="checkbox" name="Item2" value="Item2_check" onclick="BILL()"> 2.XBOX TWO = $489
+ <p><input type="checkbox" name="Item3" value="Item3_check" onclick="BILL()"> 3.NINTENDO NX = $450
+ <p><input type="checkbox" name="Item4" value="Item4_check" onclick="BILL()"> 4.NVIDIA GTX 980 = $129
+ <p><input type="checkbox" name="Item5" value="Item5_check" onclick="BILL()"> 5.RAZER PROJECT MCFLY = $125
+ <p><input type="checkbox" name="Item6" value="Item6_check" onclick="BILL()"> 6.RAZER BLADE GAMING LAPTOP = $500
+ <p><input type="checkbox" name="Item7" value="Item7_check" onclick="BILL()"> 7.FINAL FANTASY VII REMAKE = $150
+ <p><input type="checkbox" name="Item8" value="Item8_check" onclick="BILL()"> 8.KINGDOM HEARTS III = $100
+ <p><input type="checkbox" name="Item9" value="Item9_check" onclick="BILL()"> 9.CALL OF DUTY:BLACK OPS III = $75
+ <p><input type="checkbox" name="Item10" value="Item10_check" onclick="BILL()"> 10.METAL GEAR SOLID V: THE PHANTOM PAIN = $99
+ <br><br>
+ Total <input type="text" name="Total" value="$0" size="7">
+<br><br>
+<input type = "SUBMIT">
+<input type = "reset" value = "CLEAR">
+</tr>
+</table>
+</table>
+</form>
+</body>
+</html>
